@@ -14,6 +14,8 @@ function LoadItems()
 		for _, itemGroup in ipairs(tbItems) do
 			local str = ""
 			for _, item in ipairs(itemGroup) do
+				table.insert(g_Items, item)
+
 				if str ~= "" then
 					str = str .. " "
 				end
