@@ -46,6 +46,8 @@ end
 
 
 function OnDisable()
+	g_Storage.m_SqliteDB:close()
+
 	LOG( "Disabled ItemSpawner!" )
 end
 
